@@ -8,9 +8,9 @@ public class Test {
 
 	public static void main(String[] args) 
 	{
-		// Create 2 BankAccount with initial balance 500 and 200
-		BankAccount B1 = new BankAccount(500);
-		BankAccount B2 = new BankAccount(200);
+	        // Create 2 BankAccount with initial balance 500 and 200
+	        BankAccount B1 = new BankAccount(500);
+	        BankAccount B2 = new BankAccount(200);
 		
 		//withdraw 200 from 1st BankAccount
 		B1.withdraw(200);
@@ -34,24 +34,24 @@ public class Test {
 		
 		//check its balance
 		S.checkBalance();
-		
-		
-		
+	
+	
+	
 		//Create current account with initial balance 2000
 		CurrentAccount C = new CurrentAccount(2000);
-		
+	
 		//deposit 500 in it
-	    C.deposit(500);
+		C.deposit(500);
 		
-	    //withdraw 100 from it
-	    C.withdrawWithPenalty(100);
+	    	//withdraw 100 from it
+	    	C.withdrawWithPenalty(100);
 	    
-	    //Transfer 500 to first saving account
-	    C.transfer(S, 500);
+	    	//Transfer 500 to first saving account
+	   	C.transfer(S, 500);
 	    
-	    //Check balance both accounts - CurrentAccount and SavingAccount
-	    C.checkBalance();
-	    S.checkBalance();
+	    	//Check balance both accounts - CurrentAccount and SavingAccount
+	    	C.checkBalance();
+	    	S.checkBalance();
 
 	}
 
